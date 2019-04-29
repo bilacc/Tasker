@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hr.popic.danijel.toolbaractions.MainActivity" >
+
+    <item
+        android:id="@+id/action_sort_duedate_asc"
+        android:orderInCategory="100"
+        android:title="Sort by due date ascending"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_duedate_descending"
+        android:orderInCategory="100"
+        android:title="Sort by due date descending"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort_finished"
+        android:orderInCategory="100"
+        android:title="Sort by completion"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_more_vert_white_24dp"
+        android:orderInCategory="100"
+        android:title="Remove finished tasks"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:title="Exit"
+        app:showAsAction="never" />
+</menu>

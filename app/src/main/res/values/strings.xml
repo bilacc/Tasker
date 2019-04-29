@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tasker</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title_home">Tasks</string>
+    <string name="msg_no_tasks">No tasks found!</string>
+    <string name="lbl_new_task_title">New Task</string>
+    <string name="lbl_due_date_title">Due Date</string>
+    <string name="lbl_edit_task_title">Edit Task</string>
+    <string name="hint_enter_task">Enter your task!</string>
+    <string name="duedate_hint">Click to pick duedate!</string>
+</resources>

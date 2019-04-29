@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_list_row_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingBottom="@dimen/dimen_10"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dot_height"
+        android:layout_marginRight="@dimen/dot_margin_right"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/dot_text_size" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/dot"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/timestamp"
+        android:textSize="@dimen/timestamp" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timestamp"
+        android:layout_marginRight="-365dp"
+        android:layout_toLeftOf="@+id/cbSelect"
+        android:layout_toRightOf="@id/dot"
+        android:fontFamily="@font/raleway"
+        android:textColor="@color/task_list_text"
+        android:textSize="@dimen/task_list_text" />
+
+    <CheckBox
+        android:id="@+id/cbSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/duedate"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/timestamp"
+        android:fontFamily="@font/raleway" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        android:progress="50"
+        />
+
+
+
+</RelativeLayout>
